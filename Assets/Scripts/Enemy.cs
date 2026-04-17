@@ -5,6 +5,9 @@ public class Enemy : MonoBehaviour
 {
    [SerializeField] float speed;
    float hitpoints = 1f;
+   [SerializeField] int points;
+
+   public int damage {get; private set;} = 1; //amount of damage done to player health
 
     Rigidbody2D rb_enemy;
 

@@ -4,6 +4,7 @@ public class Bullet : MonoBehaviour
 {
     float speed = 20.0f;
     Rigidbody2D rb_bullet;
+    public float damage = 1f;
 
     // Update is called once per frame
 

@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 
 public class PlayerCameraBounded : MonoBehaviour
@@ -24,24 +25,48 @@ public class PlayerCameraBounded : MonoBehaviour
 
     void Awake()
     {
-        minSpeedValue = 0.0001f;
-        maxSpeedValue = controller.speed;
+        controller = GetComponent<PlayerController>();
+        minSpeedValue = 0.01f;
+        if (controller)
+        {
+            maxSpeedValue = controller.speed;
+        }
         
-        upperBound = new Vector2(0,bounds.rect.height/2);
-        lowerBound =  new Vector2(0,-bounds.rect.height/2);
-        leftBound =  new Vector2(0,-bounds.rect.height/2);
-        rightBound =  new Vector2(0,bounds.rect.height/2);
+        
+        upperBound = new Vector2(0,bounds.rect.height/2) + Vector2.down;
+        lowerBound =  new Vector2(0,-bounds.rect.height/2) + Vector2.up;
+        leftBound =  new Vector2(0,-bounds.rect.height/2) + Vector2.right;
+        rightBound =  new Vector2(0,bounds.rect.height/2) + Vector2.left;
 
-        upperThres = upperBound + Vector2.down;
-        lowerThres = lowerBound + Vector2.up;
-        leftThres = leftBound + Vector2.right;
-        rightThres = rightBound + Vector2.left;
+        //upperThres = upperBound + Vector2.down;
+       // lowerThres = lowerBound + Vector2.up;
+        //leftThres = leftBound + Vector2.right;
+       // rightThres = rightBound + Vector2.left;
+
+        
         
     }
 
+   
+    
+    void Update()
+    {
+        //if the distance between the player's position is above the upperThres, start a function that slows the player down until they reach the upperbound
+        if(gameObject.transform.position.y >= upperBound.y)
+        {
+            Debug.Log("The player's position is above the Threshold");
+            controller.speed = minSpeedValue;
+
+        }
+        else
+        {
+            controller.speed = maxSpeedValue;
+        }
+    }
+
+   
     
 
     
 
-    
 }

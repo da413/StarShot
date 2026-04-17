@@ -1,24 +1,36 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    InputAction moveAction;
-    Transform playertransform;
+    [SerializeField] InputActionReference moveAction;
+    Rigidbody2D rb_player;
     Vector2 moveValue;
     public float speed;
-    void Start()
+   
+    void OnEnable()
     {
-        moveAction = InputSystem.actions.FindAction("Move");
-        playertransform = GetComponent<Transform>();
+        moveAction.action.Enable();
+    }
+
+    void OnDisable()
+    {
+        moveAction.action.Disable();
+    }
+   
+    void Start()
+    { 
+        rb_player = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        moveValue = moveAction.ReadValue<Vector2>();
-        
-        playertransform.Translate(moveValue*speed*Time.deltaTime, Space.Self);
+       moveValue = new Vector2(moveAction.action.ReadValue<Vector2>().x, moveAction.action.ReadValue<Vector2>().y);
+
+       rb_player.MovePosition( ((Vector2) transform.position) + moveValue * Time.fixedDeltaTime * speed);
+       
         
     }
 }

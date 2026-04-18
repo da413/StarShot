@@ -79,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -158,12 +158,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 18
-        width: 26
-        height: 24
+        x: 20
+        y: 19
+        width: 24
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,12 +180,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 18
-        width: 26
-        height: 24
+        x: 84
+        y: 19
+        width: 24
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_2
       rect:
         serializedVersion: 2
-        x: 147
-        y: 17
-        width: 26
-        height: 26
+        x: 148
+        y: 18
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_3
       rect:
         serializedVersion: 2
-        x: 206
-        y: 12
-        width: 36
-        height: 36
+        x: 207
+        y: 13
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -246,12 +246,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_4
       rect:
         serializedVersion: 2
-        x: 265
-        y: 7
-        width: 46
-        height: 46
+        x: 266
+        y: 8
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_5
       rect:
         serializedVersion: 2
-        x: 329
-        y: 7
-        width: 46
-        height: 46
+        x: 330
+        y: 8
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_6
       rect:
         serializedVersion: 2
-        x: 393
-        y: 7
-        width: 46
-        height: 46
+        x: 394
+        y: 8
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_7
       rect:
         serializedVersion: 2
-        x: 457
-        y: 7
-        width: 46
-        height: 46
+        x: 458
+        y: 8
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,12 +334,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_8
       rect:
         serializedVersion: 2
-        x: 521
-        y: 7
-        width: 46
-        height: 46
+        x: 522
+        y: 8
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_9
       rect:
         serializedVersion: 2
-        x: 585
-        y: 7
-        width: 46
-        height: 46
+        x: 586
+        y: 8
+        width: 44
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,12 +378,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_10
       rect:
         serializedVersion: 2
-        x: 654
-        y: 12
-        width: 36
-        height: 36
+        x: 655
+        y: 13
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_11
       rect:
         serializedVersion: 2
-        x: 723
-        y: 17
-        width: 26
-        height: 26
+        x: 724
+        y: 18
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -422,12 +422,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_12
       rect:
         serializedVersion: 2
-        x: 792
-        y: 22
-        width: 16
-        height: 16
+        x: 793
+        y: 23
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -444,12 +444,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_13
       rect:
         serializedVersion: 2
-        x: 859
-        y: 25
-        width: 10
-        height: 10
+        x: 860
+        y: 26
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -466,12 +466,12 @@ TextureImporter:
       name: Nairan - Scout -  Destruction_14
       rect:
         serializedVersion: 2
-        x: 924
-        y: 23
-        width: 75
-        height: 14
+        x: 925
+        y: 24
+        width: 73
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -488,7 +488,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e6d9db4831647d4aba3719909250f36
     internalID: 0
     vertices: []
     indices: 
@@ -496,7 +496,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Nairan - Scout -  Destruction_0: 9217098562147807882
       Nairan - Scout -  Destruction_1: -6202654556007425290

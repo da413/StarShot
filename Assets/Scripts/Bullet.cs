@@ -18,5 +18,14 @@ public class Bullet : MonoBehaviour
     {
         rb_bullet.AddForce(Vector2.right*speed, ForceMode2D.Impulse);
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<Enemy>())
+        {
+            Debug.Log("hit enemy");
+            gameObject.SetActive(false);
+        }
+    }
     
 }

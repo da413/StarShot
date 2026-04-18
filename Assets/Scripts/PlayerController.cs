@@ -1,4 +1,5 @@
-using Unity.VisualScripting;
+
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] BulletPool bulletPool;
     GameObject bullet;
     public float speed;
+
+    public static event Action OnPlayerFired;
    
    private void TriggerShoot(InputAction.CallbackContext context) => Fire();
     void OnEnable()
@@ -48,7 +51,7 @@ public class PlayerController : MonoBehaviour
     void Fire()
     {
        //Debug.Log("Fire!");
-        
+       OnPlayerFired?.Invoke();
        bulletPool.GetFrontOfPool().transform.position =  bulletSpawner.transform.position;
        //bullet.transform.Translate(Vector2.right, Space.Self);
        

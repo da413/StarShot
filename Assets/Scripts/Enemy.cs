@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
    [SerializeField] float speed;
    float hitpoints = 1f;
    [SerializeField] int points = 5;
-
+   
    public static event Action OnEnemyDestroyed;
 
    public int damage {get; private set;} = 1; //amount of damage done to player health
@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     void Awake()
     {
         rb_enemy = GetComponent<Rigidbody2D>();
+        
   
     }
 
@@ -34,6 +35,7 @@ public class Enemy : MonoBehaviour
             {
                 //Debug.Log(hitpoints);
                 gameObject.SetActive(false);
+                
                 OnEnemyDestroyed?.Invoke();
             }
          

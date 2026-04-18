@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System;
 
 
 public class ScoreKeeper : MonoBehaviour
@@ -9,6 +10,7 @@ public class ScoreKeeper : MonoBehaviour
     [SerializeField] Enemy enemy;
 
     [SerializeField] TextMeshProUGUI scoreText;
+    public static event Action OnWinScoreAcquired;
     void OnEnable()
     {
         Enemy.OnEnemyDestroyed += AddScore;
@@ -35,5 +37,9 @@ public class ScoreKeeper : MonoBehaviour
     void UpdateScoreUI()
     {
        scoreText.text = score.ToString();
+       if(score >= winScore)
+        {
+            OnWinScoreAcquired?.Invoke();
+        }
     }
 }

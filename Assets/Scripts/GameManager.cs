@@ -5,7 +5,6 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     [SerializeField] Enemy enemy;
 
-    public int health {get; private set;} = 5;
 
     void Awake()
     {
@@ -21,6 +20,21 @@ public class GameManager : MonoBehaviour
         }
 
         
+    }
+
+    void OnEnable()
+    {
+        PlayerHealth.onPlayerDeath += GameOver;
+    }
+    void OnDisable()
+    {
+        PlayerHealth.onPlayerDeath -= GameOver;
+    }
+
+    void GameOver()
+    {
+        Debug.Log("Game over!");
+        PlayerHealth.onPlayerDeath -= GameOver;
     }
 
     

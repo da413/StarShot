@@ -10,18 +10,14 @@ public class Enemy : MonoBehaviour
 
    public int damage {get; private set;} = 1; //amount of damage done to player health
 
-    Rigidbody2D rb_enemy;
-
-    void Awake()
-    {
-        rb_enemy = GetComponent<Rigidbody2D>();
-  
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb_enemy.MovePosition((Vector2) gameObject.transform.position + Vector2.left * speed * Time.fixedDeltaTime);
+        Move();
+    }
+    void Move()
+    {
+        transform.position += Vector3.left * speed * Time.fixedDeltaTime;
     }
 
     void OnTriggerEnter2D(Collider2D other)

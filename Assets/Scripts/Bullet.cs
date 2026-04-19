@@ -3,20 +3,21 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     float speed = 20.0f;
-    Rigidbody2D rb_bullet;
     public float damage = 1f;
 
     // Update is called once per frame
 
-    void Awake()
+    private void FixedUpdate()
     {
-        rb_bullet = GetComponent<Rigidbody2D>();
+        transform.position += Vector3.right * speed * Time.fixedDeltaTime;
+    }
 
-    }
-    
-    void OnEnable()
-    {
-        rb_bullet.AddForce(Vector2.right*speed, ForceMode2D.Impulse);
-    }
-    
+    // void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if(other.GetComponent<Enemy>())
+    //     {
+    //         gameObject.SetActive(false);
+    //     }
+    //}
 }
+

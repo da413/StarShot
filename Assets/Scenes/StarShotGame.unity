@@ -287,7 +287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &77372540
 Transform:
   m_ObjectHideFlags: 0
@@ -1244,7 +1244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &724990553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1498,7 +1498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1009231681
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1788,7 +1788,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1245973134
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1824,7 +1824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1256302171
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2038,7 +2038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1398999990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2813,6 +2813,7 @@ MonoBehaviour:
   bulletSpawner: {fileID: 160021010}
   bulletPool: {fileID: 520656248}
   speed: 7
+  collider: {fileID: 1885203962}
 --- !u!61 &1885203962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2847,7 +2848,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.24703698, y: -0.0058014095}
+  m_Offset: {x: -0.01584483, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2857,7 +2858,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.33233568, y: 0.3999681}
+  m_Size: {x: 0.33168966, y: 0.3999681}
   m_EdgeRadius: 0
 --- !u!50 &1885203963
 Rigidbody2D:
@@ -2917,6 +2918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Ship - Engines - Base Engine - Powering
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 48f60aae6a55c3248a055e54fb0fa81a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 48f60aae6a55c3248a055e54fb0fa81a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2931,7 +2936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 48f60aae6a55c3248a055e54fb0fa81a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 48f60aae6a55c3248a055e54fb0fa81a, type: 3}
       propertyPath: m_LocalPosition.y
